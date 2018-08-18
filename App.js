@@ -1,5 +1,6 @@
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+import React, { Component } from 'react'
+import { View, Platform, StyleSheet } from 'react-native'
+import MainScreen from './src/Screens/MainScreen';
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
@@ -12,7 +13,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-       <Text>Get Started</Text>
+       <MainScreen/>
       </View>
     );
   }
