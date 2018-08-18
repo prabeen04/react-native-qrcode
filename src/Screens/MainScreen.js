@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, TextInput } from 'react-native'
-import QRCode from 'react-native-qrcode';
+import QRCoder from '../components/utils/QRCoder';
 
 class MainScreen extends Component {
     state = {
-        text: 'http://facebook.github.io/react-native/',
+        text: '',
     };
     render() {
         return (
@@ -14,10 +14,10 @@ class MainScreen extends Component {
                     onChangeText={(text) => this.setState({ text: text })}
                     value={this.state.text}
                 />
-                <QRCode
-                    value={this.state.text}
+                <QRCoder
+                    code={this.state.text}
                     size={200}
-                    bgColor='purple'
+                    bgColor='red'
                     fgColor='white' />
             </View>
         )
