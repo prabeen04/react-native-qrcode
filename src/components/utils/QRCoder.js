@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Text, StyleSheet, View, TextInput } from 'react-native'
 import QRCode from 'react-native-qrcode';
 
-class QRCode extends Component {
+class QRCoder extends Component {
     state = {
         text: 'http://facebook.github.io/react-native/',
     };
@@ -18,4 +18,4 @@ class QRCode extends Component {
         )
     }
 }
-export default QRCode;
+export default QRCoder;
