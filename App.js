@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { View, Platform, StyleSheet } from 'react-native'
+import MainTab from './src/Screens/MainTab';
 import MainScreen from './src/Screens/MainScreen';
 
 const instructions = Platform.select({
@@ -13,7 +14,8 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-       <MainScreen/>
+       <MainTab/>
+       {/* <MainScreen/> */}
       </View>
     );
   }

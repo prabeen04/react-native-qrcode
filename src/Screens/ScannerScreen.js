@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Text, StyleSheet, View, TextInput } from 'react-native'
-import QRCoder from '../components/utils/QRCoder';
 
 class ScannerScreen extends Component {
     state = {
@@ -14,11 +13,6 @@ class ScannerScreen extends Component {
                     onChangeText={(text) => this.setState({ text: text })}
                     value={this.state.text}
                 />
-                <QRCoder
-                    code={this.state.text}
-                    size={200}
-                    bgColor='red'
-                    fgColor='white' />
             </View>
         )
     }
