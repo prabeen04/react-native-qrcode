@@ -24,10 +24,9 @@ class SettingsScreen extends React.Component {
     }
 }
 export default createBottomTabNavigator({
-    Home: {
-      screen: HomeScreen,
-    },
-    Setting: {
-      screen: SettingsScreen,
-    },
+    QRCode: MainScreen,
+    Scanner: ScannerScreen,
+  },
+  {
+    initialRouteName: 'QRCode',
   });
