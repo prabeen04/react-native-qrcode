@@ -161,3 +161,7 @@ task copyDownloadableDepsToLibs(type: Copy) {
     from configurations.compile
     into 'libs'
 }
+
+implementation (project(':react-native-camera')) {
+        exclude group: "com.android.support"
+}
