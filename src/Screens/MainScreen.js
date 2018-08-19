@@ -3,6 +3,15 @@ import { Text, StyleSheet, View, TextInput } from 'react-native'
 import QRCoder from '../components/utils/QRCoder';
 
 class MainScreen extends Component {
+    static navigationOptions = {
+        drawerLabel: 'Home',
+        // drawerIcon: ({ tintColor }) => (
+        //   <Image
+        //     source={require('./chats-icon.png')}
+        //     style={[styles.icon, {tintColor: tintColor}]}
+        //   />
+        // ),
+      };
     state = {
         text: '',
     };

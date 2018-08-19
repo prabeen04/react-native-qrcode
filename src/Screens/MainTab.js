@@ -5,6 +5,15 @@ import MainScreen from "./MainScreen";
 import ScannerScreen from './ScannerScreen';
 
 class HomeScreen extends React.Component {
+    static navigationOptions = {
+        drawerLabel: 'Home',
+        // drawerIcon: ({ tintColor }) => (
+        //   <Image
+        //     source={require('./chats-icon.png')}
+        //     style={[styles.icon, {tintColor: tintColor}]}
+        //   />
+        // ),
+      };
     render() {
         return (
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
