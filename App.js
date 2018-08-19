@@ -12,15 +12,9 @@ const instructions = Platform.select({
 
 export default class App extends Component {
   render() {
-    return (
-      <View style={styles.container}>
-       <MainTab/>
-       {/* <MainScreen/> */}
-      </View>
-    );
-  }
+    return  <MainTab/> ;
 }
-
+}
 const styles = StyleSheet.create({
   container: {
     flex: 1,
