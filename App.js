@@ -12,8 +12,8 @@ const instructions = Platform.select({
 
 export default class App extends Component {
   render() {
-    return  <MainTab/> ;
-}
+    return <MainTab />;
+  }
 }
 const styles = StyleSheet.create({
   container: {
