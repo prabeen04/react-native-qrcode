@@ -1,28 +1,8 @@
 import React, { Component } from 'react'
-import { createBottomTabNavigator, createDrawerNavigator } from 'react-navigation';
-import { View, Text } from 'react-native'
+import { createBottomTabNavigator } from 'react-navigation';
 import MainScreen from "./MainScreen";
 import ScannerScreen from './ScannerScreen';
 
-class HomeScreen extends React.Component {
-    render() {
-        return (
-            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <Text>Home!</Text>
-            </View>
-        );
-    }
-}
-
-class SettingsScreen extends React.Component {
-    render() {
-        return (
-            <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <Text>Settings!</Text>
-            </View>
-        );
-    }
-}
 export default createBottomTabNavigator({
     QRCode: MainScreen,
     Scanner: ScannerScreen,
