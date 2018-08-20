@@ -3,6 +3,12 @@ import { Text, StyleSheet, View, TouchableOpacity, Linking } from 'react-native'
 import QRCodeScanner from 'react-native-qrcode-scanner';
 
 class ScannerScreen extends Component {
+    onSuccess(e) {
+        Linking
+            .openURL(e.data)
+            .catch(err => console.error('An error occured', err));
+    }
+
     render() {
         return (
             <View style={styles.container}>
