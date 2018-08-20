@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
-import { Text, StyleSheet, View, TextInput } from 'react-native'
+import { Text, StyleSheet, View, TouchableOpacity, Linking } from 'react-native'
+import QRCodeScanner from 'react-native-qrcode-scanner';
 
 class ScannerScreen extends Component {
-    state = {
-        text: '',
-    };
     render() {
         return (
             <View style={styles.container}>
